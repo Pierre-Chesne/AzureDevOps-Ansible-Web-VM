@@ -15,3 +15,14 @@
          apt:
            name: nginx
            state: present
+
+       - name: Permission sur le repertoire /var/www/html  
+         file:
+           path: /var/www/html
+           mode: '0755'
+
+
+       - name: recuperation du site
+           get_url:
+           url: https://raw.githubusercontent.com/Pierre-Chesne/AzureDevOps-Ansible-Web-VM/master/SiteWeb/SiteWeb.zip
+           dest: /etc/foo.conf
