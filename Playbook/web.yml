@@ -34,5 +34,6 @@
            
        - name: unzip le site
          unarchive:
-           src: /tmp/SiteWeb.zip
-           dest: /tmp
+           src: /home/pierrc/SiteWeb.zip
+           dest: /home/pierrc/
+           remote_src: yes
