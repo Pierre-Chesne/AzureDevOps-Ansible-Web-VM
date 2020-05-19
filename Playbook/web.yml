@@ -24,7 +24,7 @@
        - name: recuperation du site
          get_url:
            url: https://raw.githubusercontent.com/Pierre-Chesne/AzureDevOps-Ansible-Web-VM/master/SiteWeb.zip
-           dest: /tmp/SiteWeb.zip
+           dest: /home/pierrc/SiteWeb.zip
 
        - name: installation Unzip
          apt:
