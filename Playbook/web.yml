@@ -38,5 +38,7 @@
            dest: /home/pierrc/
            remote_src: yes
 
-       - name: move le site
-         command: mv /home/pierrc/SiteWeb /var/www/html/
+       - name: copy le site
+         copy:
+           src: /home/pierrc/SiteWeb/
+           dest: /var/www/html/
