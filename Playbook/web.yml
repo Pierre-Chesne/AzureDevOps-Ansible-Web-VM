@@ -42,3 +42,4 @@
          copy:
            src: /home/pierrc/SiteWeb/
            dest: /var/www/html/
+           remote_src: yes
